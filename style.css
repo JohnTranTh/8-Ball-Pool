@@ -1,0 +1,41 @@
+/* #pool-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+} */
+
+#pool-table {
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0;
+    overflow: visible;
+    height: 70vh;
+}
+
+#names {
+    /* text-align: center;
+    display: table-cell;
+    vertical-align: middle; */
+    /* transform: translateY(50%); */
+    float: left;
+    font-size: 30px;
+}
+
+/* #start-page-container {
+    justify-content: center;
+    align-items: center;
+} */
+
+#start-page-container h1 {
+    font-size: 40px;
+}
+
+#start-page-container label {
+    font-size: 20px;
+}
+
+#start-page-container input {
+    font-size: 20px;
+}

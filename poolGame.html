@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pool Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="names">
+            <label id="player1-text" for="player1">Player 1 Name: %(player1)s </label><br>
+            <input type="hidden" id="player1" name="player1" value="%(player1)s">
+            <label id="player2-text" for="player2">Player 2 Name: %(player2)s </label><br>
+            <input type="hidden" id="player2" name="player2" value="%(player2)s">
+            <p id="player-turn"></p>
+            <p id="win-message"></p>
+        </div>
+        <div id="pool-table-container">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+                                  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg id="pool-table" width="700" height="1375" viewBox="-25 -25 1400 2750"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="1350" height="2700" x="0" y="0" fill="#C0D0C0" /> <rect width="1400" height="25" x="-25" y="-25" fill="darkgreen" />
+             <rect width="1400" height="25" x="-25" y="2700" fill="darkgreen" />
+             <rect width="25" height="2750" x="-25" y="-25" fill="darkgreen" />
+             <rect width="25" height="2750" x="1350" y="-25" fill="darkgreen" />
+             <circle cx="0" cy="0" r="114" fill="black" />
+             <circle cx="0" cy="1350" r="114" fill="black" />
+             <circle cx="0" cy="2700" r="114" fill="black" />
+             <circle cx="1350" cy="0" r="114" fill="black" />
+             <circle cx="1350" cy="1350" r="114" fill="black" />
+             <circle cx="1350" cy="2700" r="114" fill="black" />
+             <circle id="low-ball" cx="675" cy="680" r="28" fill="YELLOW" />
+             <circle id="low-ball" cx="643" cy="623" r="28" fill="BLUE" />
+             <circle id="high-ball" cx="706" cy="624" r="28" fill="LIGHTYELLOW" />
+             <circle id="high-ball" cx="738" cy="570" r="28" fill="LIGHTBLUE" />
+             <circle id="low-ball" cx="612" cy="568" r="28" fill="RED" />
+             <circle id="black-ball" cx="674" cy="568" r="28" fill="BLACK" />
+             <circle id="high-ball" cx="770" cy="515" r="28" fill="PINK" />
+             <circle id="low-ball" cx="578" cy="513" r="28" fill="BROWN" />
+             <circle id="high-ball" cx="641" cy="512" r="28" fill="LIGHTGREEN" />
+             <circle id="low-ball" cx="704" cy="512" r="28" fill="PURPLE" />
+             <circle id="low-ball" cx="802" cy="455" r="28" fill="ORANGE" />
+             <circle id="high-ball" cx="551" cy="452" r="28" fill="MEDIUMPURPLE" />
+             <circle id="high-ball" cx="614" cy="452" r="28" fill="LIGHTSALMON" />
+             <circle id="low-ball" cx="738" cy="452" r="28" fill="GREEN" />
+             <circle id="high-ball" cx="677" cy="452" r="28" fill="SANDYBROWN" />
+             <circle id="cue-ball" cx="676" cy="2025" r="28" fill="WHITE" />
+            </svg>
+        </div>
+    </body>
+</html>
